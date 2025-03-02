@@ -75,56 +75,38 @@ hugo server -D
 ```
 - Open the link `http://localhost:1313/` in your browser.
 
-### 6. Build the Static Site 
-- When you are ready to deploy :
-``` bash
-hugo
+### 6. Creat a Git Repository
+ ```bash
+git init
+touch .gitmodules
 ```
-- This generate a public/folder with your website files.
+- Add the theme submodule
+``` [submodule "themes/hugo-PaperMod"]
+        path = themes/hugo-PaperMod
+        url = "https://github.com/adityatelange/hugo-PaperMod.git"
+```
+- Commit the changes 
+- Push it to your gihub account as a public repository
+### 7.Deploy the Website Using Netlify
+- Visit [Netlify Official Website](https://www.netlify.com/)
+- Sign up
+- Add new site and connect your git repostitory with netlify.
+- change :
+    - Build command --> hugo
+    - Publish directory --> public
+- On advanced setting give `Key` as `HUGO_VERSION` and `Value` as `hugo version installed on your system `.
+- Click `Deploy site`
 
-### 7. Push Your Site to GitHub
-#### 1. Creat a GitHub Repository
-   - Go to GitHub
-   - Click New Reository and give it a name (e.g.,my-blog).
-   - Do not add a README,gitignore,or license file.
-#### 2. Initialize Git and Push Files
-- Now you need to link your Hugo project with GitHub. Run the following commands in your Hugo project folder
-``` bash
-cd my-blog  # Navigate to the project folder
-git init    # Initailize a new Git repository 
-git add .   # Stage all files for commit 
-git commit -m "Initial commit" # Commit the changes
-git branch -M main # Rename the branch to `main`
-git remote add origin <repo-url> # Add GitHub repository URL
-git push -u origin main # Push the code to GitHub 
-```
-### 8. Deploy to GitHub Pages
-#### 1. Create a gh-pages Branch 
-``` bash 
-git checkout --orphan gh-pages
-git rm -rf .
-```
-#### 2. Move Generated Files to gh-pages
-``` bash
-mv public/* .
-rm -rf public 
-git add .
-git commit -m "Deploy Hugo site"
-git push origin gh-pages 
-```
-#### 3. Enable GitHub Pages 
-- Go to GitHub repository --> Settings -->Pages.
-- Set Source to gh-pages branch and save.
-- Your site will be live at 
-  ` https:yourusername.github.io/my-blog/`
+### 8. Setup the BaseURL
+- change the baseURL on the config.yaml file and commit the chages 
 
 ### Conclusion 
-Congratualtions ! You've successfully built and deployed your own **Hugo-powered blog** on **GitHub Pages**.
+Congratualtions ! You've successfully built and deployed your own **Hugo-powered blog** on **Netlify**.
 In this guide, we covered :
 - Installing and setting up **Hugo**.
 - Creating a **new blog** and adding a theme.
 - Writing your **first blog post** .
-- Deploying the blog to **GitHub Pages**.
+- Deploying the blog to **Netlify**.
 With this setup, you can now focus on **writing great content** without worrying about complex configurations. 
 If you find this guide helpful, feel free to **share it with others**.
 
@@ -134,7 +116,6 @@ Happy blogging!
 Throughout this journey of building and deploying a **Hugo blog**, I refered to several resources that provided valuable guidance. Here are some of them:
 - [Hugo Official Documentation](https://gohugo.io/documentation/) - for learnig Hugo commands and configurations.
 - [Hugo Themes](https://themes.gohugo.io/)- To choose and install a theme for the site.
-- [GitHub Pages](https://pages.github.com/) - To understand how GitHub Pages works for hosting.
 - [https://youtu.be/LIFvgrRxdt4?si=qRrf_WF3hfLLs6Ds](https://youtu.be/LIFvgrRxdt4?si=qRrf_WF3hfLLs6Ds)
 - [https://youtu.be/hjD9jTi_DQ4?si=7e_JRhWTbkEeZXWp](https://youtu.be/hjD9jTi_DQ4?si=7e_JRhWTbkEeZXWp)
 - [https://youtu.be/EZI9kydYhfA?si=5ChEWWfy2omft1v1](https://youtu.be/EZI9kydYhfA?si=5ChEWWfy2omft1v1)
