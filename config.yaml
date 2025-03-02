@@ -1,0 +1,101 @@
+baseURL: "https://sreeharimx.github.io/"
+languageCode: en-us
+title: SREEHARI
+theme: hugo-PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: 
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+    - identifier: experience
+      name: Experience
+      url: /experience/
+      weight: 40
+    - #identifier: search
+      #name: Search
+      #url: 
+      #weight: 50
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "SREEHARI"
+    subtitle:  Hai , I’m SREEHARI, a beginner in the field of cybersecurity with a strong passion for learning and growing in this ever-evolving industry. I’ve started this website to document and share my journey as I explore various aspects of cybersecurity, from basic concepts to more advanced techniques. My goal is to not only enhance my skills but also to contribute to the community by sharing what I learn along the way. Thanks for visiting my site – I hope you find the resources here helpful, and I look forward to connecting with fellow learners and professionals!
+
+
+ 
+    imageUrl: "/home/profile.jpg"
+    imageWidth: 220
+    imageHeight: 220
+    # buttons:
+    #   - name: Resume
+    #     url: ""
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: ""
+    - name: "linkedin"
+      url: ""
+    - name: "github"
+      url: "https://github.com/sreehari-mx"
+    - name: "youtube"
+      url: ""
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
