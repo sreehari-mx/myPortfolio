@@ -52,7 +52,7 @@ params:
 
 
  
-    imageUrl: "/home/profile.jpg"
+    imageUrl: "/home/profile.jpeg"
     imageWidth: 220
     imageHeight: 220
     # buttons:
@@ -71,7 +71,7 @@ params:
     - name: "email"
       url: ""
     - name: "linkedin"
-      url: ""
+      url: "https://www.linkedin.com/in/sreehari-v-v-251a00340"
     - name: "github"
       url: "https://github.com/sreehari-mx"
     - name: "youtube"

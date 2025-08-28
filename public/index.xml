@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SREEHARI</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on SREEHARI</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting The Fundamentals</title>
+      <link>http://localhost:1313/blog/getting-the-fundamentals/</link>
+      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/getting-the-fundamentals/</guid>
+      <description>This post shares my past couple of month&amp;#39;s learning experiences as a beginner in cybersecurity.</description>
+    </item>
+    <item>
+      <title>Getting Started With Hugo</title>
+      <link>http://localhost:1313/blog/getting-started-with-hugo/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/getting-started-with-hugo/</guid>
+      <description>A step-by-step giude on how I built my first static website using Hugo and how you can do it too.</description>
+    </item>
+  </channel>
+</rss>
