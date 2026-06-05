@@ -52,7 +52,7 @@ params:
 
 
  
-    imageUrl: "/home/profile.jpeg"
+    imageUrl: "/home/newProfile.png"
     imageWidth: 220
     imageHeight: 220
     # buttons:
